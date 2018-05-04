@@ -1,1 +1,2 @@
-# responsive-portfolio
+# basic-portfolio
+homework assignment 1
