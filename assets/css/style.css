@@ -11,11 +11,8 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #ffffff;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-.links {
-    position: relative;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 li {
@@ -33,7 +30,6 @@ li a {
 }
 
 .name {
-    position: absolute;
     color: white;
     font-size: 40px;
     float: left;
@@ -44,6 +40,7 @@ li a {
 
 header {
     background: white;
+    width: 100%
     
 }
 
@@ -53,26 +50,14 @@ header {
 
 .content {
     display: block;
-    width: 990px;
+    width: 75%;
     margin: 0 auto;
     border: 1px solid #dddddd;
     padding: 20px;
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
-    /* s */
+    position: relative;
    }
-
-@media screen and (min-width: 480px) {
-    .content {
-        max-width: 85%;
-    }
-    .header {
-        max-width: 85%;
-    }
-    li {
-        float: both;
-    }
-}
 
 p {
     color: #777777;
@@ -83,7 +68,7 @@ p {
 }
 
 h1 {
-    width: 960px;
+    width: 100%;
     margin: auto;
     color: #4aaaa5;
     font-size: 40px;
@@ -105,11 +90,11 @@ footer p {
     color: white;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
+.column {
+    flex: 25%;
+    padding: 0 15px;
+}
+
   
   form{
     font-family: Arial, Helvetica, sans-serif;
@@ -132,7 +117,7 @@ footer p {
     cursor: pointer;
 }
 
-.imageContainer h3{
+ h3{
     bottom: 100px;
     position: relative;
     width: auto;
@@ -146,7 +131,70 @@ footer p {
     border-bottom: 0
 }
 
-.imageContainer {
-    margin: 5px;
-    float: left;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+    
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+
+@media screen and (max-width: 960px) {
+    .content {
+        width: 90%;
+    }
+
+    .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+} 
+
+@media screen and (max-width: 768px) {
+
+    li a {
+        font-size: 3.5vw;
+    }
+
+    .name {
+        font-size: 5vw;
+    }
+
+    .content {
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    
+    .column {
+        flex: 100%;
+        max-width: 100%;
+        }
+
+    .name {
+        font-size: 10vw;
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    li a {
+        font-size: 4vw;
+    }
+    
+    .links{
+        float: none;
+        margin-right: 7vw
+    }
+
+    .bacon {
+        width: 100%;
+        height: 150%;
+        margin-bottom: 10px;
+    }
 }
