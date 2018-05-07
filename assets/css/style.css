@@ -40,7 +40,8 @@ li a {
 
 header {
     background: white;
-    width: 100%
+    width: 100%;
+    border-bottom: 2px solid #dddddd; 1
     
 }
 
@@ -146,6 +147,11 @@ footer p {
     .content {
         width: 90%;
     }
+
+    .name {
+        margin-left: 0px;
+    }
+    
 
     .column {
         flex: 50%;
